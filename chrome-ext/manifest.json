@@ -1,0 +1,21 @@
+{
+    "name": "YouTube Comment Summaries",
+    "description": "Analyzes a youtube video comments and provide Summaries.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/watch?*"],
+            "css": ["styles.css"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "action": {
+        "default_title": "Youtube Comment Summaries",
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+        "activeTab"
+    ]
+}

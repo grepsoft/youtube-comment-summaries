@@ -1,0 +1,59 @@
+/* styles.css */
+.inserted-div {
+    background-color: #3ea6ff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00cffc; /* Subtle border */
+    margin-top: 5px; /* Add some margin at the top */
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px rgba(91, 186, 242, 0.192); /* Add a subtle shadow */
+  }
+  
+
+  /* Example of more specific styling if needed */
+  .inserted-div p { /* Style paragraphs inside the div */
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #fff;
+  }
+
+  button {
+    background: black;
+    padding: 6px 10px;
+    color: white;
+    border-radius: 6px;
+  }
+
+
+  .pulsing-background {
+    animation: pulse 1.5s infinite; /* Adjust duration (1.5s) and iteration (infinite) */
+    background-color: #7bc6fb; /* Light gray background (adjust as needed) */
+    /* Other styles for your element (padding, border, etc.) */
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #8ad3e0; /* Initial background color */
+      opacity: 0.6; 
+    }
+    50% {
+      background-color: #2a8bdb; /* Slightly darker color (adjust as needed) */
+      opacity: 1;
+    }
+    100% {
+      background-color: #8ad3e0; /* Return to initial color */
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes textPulse {
+      0% {
+          opacity: 0.8;
+      }
+      50% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0.8;
+      }
+  }
